@@ -5,7 +5,7 @@
 //  Created by Stefano Cardia Dev on 26/02/21.
 //
 
-
+#warning("questo messaggio è committato su github")
 
 protocol ValidationSimpleCell_Delegate: class {
     func getDataFromCell(fromCell: String, data: String)
@@ -170,22 +170,22 @@ class ValidationSimpleCell_RowObject: TableViewCellProtocol {
 
 extension ValidationSimpleCell: UITextFieldDelegate {
     
-    
-//    func textFieldDidChangeSelection(_ textField: UITextField) {
-//        cell_CheckFieldsEmptiness(checkValidity: true)
-////        SC_cell_CheckFieldsEmptiness(cellTextfield: cellTextfield, model: self.model)
-//    }
-    
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
-//        if let text = textField.text, let textRange = Range(range, in: text) {
-//            let updatedText = text.replacingCharacters(in: textRange, with: string)
-            cell_CheckFieldsEmptiness(checkValidity: true)
-
-            //              myvalidator(text: updatedText)
-//        }
-        return true
+    //per la validazione sembra più affidabile
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        cell_CheckFieldsEmptiness(checkValidity: true)
+//        SC_cell_CheckFieldsEmptiness(cellTextfield: cellTextfield, model: self.model)
     }
+    
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//
+////        if let text = textField.text, let textRange = Range(range, in: text) {
+////            let updatedText = text.replacingCharacters(in: textRange, with: string)
+//            cell_CheckFieldsEmptiness(checkValidity: true)
+//
+//            //              myvalidator(text: updatedText)
+////        }
+//        return true
+//    }
     
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -217,9 +217,14 @@ extension ValidationSimpleCell: UITextFieldDelegate {
 //devi cercare di rendere più generica questa cell_CheckFieldsEmptiness, ma hai il problema del delgato che è di un tipo preciso
 
 //
-//class Testone {
+//protocol CellCanCheckDelegate {
+//    func cell_CheckFieldsEmptiness(checkValidity: Bool) //putt default = true
+//}
 //
-//    func cell_CheckFieldsEmptiness(checkValidity: Bool = true, cellTextfield: UITextField, model) {
+//extension ValidationSimpleCell : CellCanCheckDelegate {
+//
+//    //MARK: - validazione --------------------------------------------------------------------------------------
+//    func cell_CheckFieldsEmptiness(checkValidity: Bool = true) {
 //
 //        let textFromTextfield = cellTextfield.text ?? ""
 //        var isLongEough = true
@@ -255,4 +260,7 @@ extension ValidationSimpleCell: UITextFieldDelegate {
 //        }
 //    }
 //
+//    //validazione --------------------------------------------------------------------------------------
+//
 //}
+

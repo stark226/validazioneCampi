@@ -149,7 +149,6 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: ValidationSimpleCell_Delegate {
      
-    
     func canEnableButton(fromField: String, statusForEnableIs: Bool) {
         
         switch fromField {
