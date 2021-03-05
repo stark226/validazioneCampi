@@ -82,47 +82,6 @@ class ValidationSimpleCell: UITableViewCell {
         //        self.layoutMargins = UIEdgeInsets.zero
     }
     
-    //MARK: - validazione --------------------------------------------------------------------------------------
-    func cell_CheckFieldsEmptiness(checkValidity: Bool = true) {
-
-        let textFromTextfield = cellTextfield.text ?? ""
-        var isLongEough = true
-        var isMailValid = true
-        if checkValidity {
-
-            let isFieldEmpty = textFromTextfield.isEmpty
-
-            //qui fai le varie validazioni a seconda del campo
-            if self.model?.identity == Fields.name.rawValue {
-            }
-
-            switch self.model?.identity {
-            case Fields.name.rawValue:
-//                isLongEough = isMinimumLong(text: testo, limit: 4)
-                isLongEough = textFromTextfield.isMinimumLong(limit: 4)
-                isLongEough = !textFromTextfield.isNumber()
-            case Fields.mailAddress.rawValue:
-                isMailValid = textFromTextfield.isValidEmail()
-            default:
-                break
-            }
-
-
-
-            //qui la cella contribuisce dare il nulla osta per abilitare il bottone
-            if !isFieldEmpty && isLongEough && isMailValid {
-                self.model?.delegate?.canEnableButton(fromField: self.model?.identity ?? "N/A", statusForEnableIs: true)
-            } else {
-                self.model?.delegate?.canEnableButton(fromField: self.model?.identity ?? "N/A", statusForEnableIs: false)
-            }
-
-        }
-    }
-
-    //validazione --------------------------------------------------------------------------------------
-
-
-   
     
 }
 
@@ -213,54 +172,53 @@ extension ValidationSimpleCell: UITextFieldDelegate {
 
 
 
+protocol CellCanCheckDelegate {
+    func cell_CheckFieldsEmptiness(checkValidity: Bool) //putt default = true
+}
 
-//devi cercare di rendere più generica questa cell_CheckFieldsEmptiness, ma hai il problema del delgato che è di un tipo preciso
+extension ValidationSimpleCell : CellCanCheckDelegate {
 
-//
-//protocol CellCanCheckDelegate {
-//    func cell_CheckFieldsEmptiness(checkValidity: Bool) //putt default = true
-//}
-//
-//extension ValidationSimpleCell : CellCanCheckDelegate {
-//
-//    //MARK: - validazione --------------------------------------------------------------------------------------
-//    func cell_CheckFieldsEmptiness(checkValidity: Bool = true) {
-//
-//        let textFromTextfield = cellTextfield.text ?? ""
-//        var isLongEough = true
-//        var isMailValid = true
-//        if checkValidity {
-//
-//            let isFieldEmpty = textFromTextfield.isEmpty
-//
-//            //qui fai le varie validazioni a seconda del campo
-//            if self.model?.identity == Fields.name.rawValue {
-//            }
-//
-//            switch self.model?.identity {
-//            case Fields.name.rawValue:
-////                isLongEough = isMinimumLong(text: testo, limit: 4)
-//                isLongEough = textFromTextfield.isMinimumLong(limit: 4)
-//                isLongEough = !textFromTextfield.isNumber()
-//            case Fields.mailAddress.rawValue:
-//                isMailValid = textFromTextfield.isValidEmail()
-//            default:
-//                break
-//            }
-//
-//
-//
-//            //qui la cella contribuisce dare il nulla osta per abilitare il bottone
-//            if !isFieldEmpty && isLongEough && isMailValid {
-//                self.model?.delegate?.canEnableButton(fromField: self.model?.identity ?? "N/A", statusForEnableIs: true)
-//            } else {
-//                self.model?.delegate?.canEnableButton(fromField: self.model?.identity ?? "N/A", statusForEnableIs: false)
-//            }
-//
-//        }
-//    }
-//
-//    //validazione --------------------------------------------------------------------------------------
-//
-//}
+    //MARK: - validazione --------------------------------------------------------------------------------------
+    func cell_CheckFieldsEmptiness(checkValidity: Bool = true) {
+
+        let textFromTextfield = cellTextfield.text ?? ""
+        var isLongEough = true
+        var isMailValid = true
+        if checkValidity {
+
+            let isFieldEmpty = textFromTextfield.isEmpty
+
+            //qui fai le varie validazioni a seconda del campo
+            if self.model?.identity == Fields.name.rawValue {
+            }
+
+            switch self.model?.identity {
+            case Fields.name.rawValue:
+//                isLongEough = isMinimumLong(text: testo, limit: 4)
+                isLongEough = textFromTextfield.isMinimumLong(limit: 4)
+                isLongEough = !textFromTextfield.isNumber()
+            case Fields.mailAddress.rawValue:
+                isMailValid = textFromTextfield.isValidEmail()
+            default:
+                break
+            }
+
+
+
+            //qui la cella contribuisce dare il nulla osta per abilitare il bottone
+            if !isFieldEmpty && isLongEough && isMailValid {
+                self.model?.delegate?.canEnableButton(fromField: self.model?.identity ?? "N/A", statusForEnableIs: true)
+            } else {
+                self.model?.delegate?.canEnableButton(fromField: self.model?.identity ?? "N/A", statusForEnableIs: false)
+            }
+
+        }
+    }
+    
+
+
+    //validazione --------------------------------------------------------------------------------------
+
+}
+
 
