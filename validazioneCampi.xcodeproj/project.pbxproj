@@ -13,6 +13,13 @@
 		7A4B6CA925E96805005E9E2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4B6CA725E96805005E9E2C /* Main.storyboard */; };
 		7A4B6CAB25E96807005E9E2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A4B6CAA25E96807005E9E2C /* Assets.xcassets */; };
 		7A4B6CAE25E96807005E9E2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4B6CAC25E96807005E9E2C /* LaunchScreen.storyboard */; };
+		7A4B6CB725E968A4005E9E2C /* ValidationSimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B6CB625E968A4005E9E2C /* ValidationSimpleCell.swift */; };
+		7A4B6CBA25E96A81005E9E2C /* TableCell+delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B6CB925E96A81005E9E2C /* TableCell+delegation.swift */; };
+		7A5F694625EAA31B003F7B30 /* GenPayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F694525EAA31B003F7B30 /* GenPayCell.swift */; };
+		7A5F694925EAA324003F7B30 /* GenericPayLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F694825EAA324003F7B30 /* GenericPayLoginVC.swift */; };
+		7A5F694C25EAA337003F7B30 /* TimPayTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F694B25EAA337003F7B30 /* TimPayTextField.swift */; };
+		7A72E90825EBB76800489965 /* String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72E90725EBB76800489965 /* String+extensions.swift */; };
+		7A72E90D25EBB8C100489965 /* MieiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72E90C25EBB8C100489965 /* MieiTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		7A4B6CAA25E96807005E9E2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A4B6CAD25E96807005E9E2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A4B6CAF25E96807005E9E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A4B6CB625E968A4005E9E2C /* ValidationSimpleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationSimpleCell.swift; sourceTree = "<group>"; };
+		7A4B6CB925E96A81005E9E2C /* TableCell+delegation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableCell+delegation.swift"; sourceTree = "<group>"; };
+		7A5F694525EAA31B003F7B30 /* GenPayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenPayCell.swift; sourceTree = "<group>"; };
+		7A5F694825EAA324003F7B30 /* GenericPayLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericPayLoginVC.swift; sourceTree = "<group>"; };
+		7A5F694B25EAA337003F7B30 /* TimPayTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimPayTextField.swift; sourceTree = "<group>"; };
+		7A72E90725EBB76800489965 /* String+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extensions.swift"; sourceTree = "<group>"; };
+		7A72E90C25EBB8C100489965 /* MieiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MieiTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +72,36 @@
 			children = (
 				7A4B6CA125E96805005E9E2C /* AppDelegate.swift */,
 				7A4B6CA325E96805005E9E2C /* SceneDelegate.swift */,
-				7A4B6CA525E96805005E9E2C /* ViewController.swift */,
+				7A5F695125EAA418003F7B30 /* originals */,
+				7A4B6CBC25E96B2E005E9E2C /* Coinvolti */,
 				7A4B6CA725E96805005E9E2C /* Main.storyboard */,
 				7A4B6CAA25E96807005E9E2C /* Assets.xcassets */,
 				7A4B6CAC25E96807005E9E2C /* LaunchScreen.storyboard */,
 				7A4B6CAF25E96807005E9E2C /* Info.plist */,
 			);
 			path = validazioneCampi;
+			sourceTree = "<group>";
+		};
+		7A4B6CBC25E96B2E005E9E2C /* Coinvolti */ = {
+			isa = PBXGroup;
+			children = (
+				7A4B6CA525E96805005E9E2C /* ViewController.swift */,
+				7A4B6CB625E968A4005E9E2C /* ValidationSimpleCell.swift */,
+				7A4B6CB925E96A81005E9E2C /* TableCell+delegation.swift */,
+				7A72E90725EBB76800489965 /* String+extensions.swift */,
+				7A72E90C25EBB8C100489965 /* MieiTest.swift */,
+			);
+			path = Coinvolti;
+			sourceTree = "<group>";
+		};
+		7A5F695125EAA418003F7B30 /* originals */ = {
+			isa = PBXGroup;
+			children = (
+				7A5F694525EAA31B003F7B30 /* GenPayCell.swift */,
+				7A5F694825EAA324003F7B30 /* GenericPayLoginVC.swift */,
+				7A5F694B25EAA337003F7B30 /* TimPayTextField.swift */,
+			);
+			path = originals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +174,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A72E90D25EBB8C100489965 /* MieiTest.swift in Sources */,
 				7A4B6CA625E96805005E9E2C /* ViewController.swift in Sources */,
 				7A4B6CA225E96805005E9E2C /* AppDelegate.swift in Sources */,
+				7A4B6CB725E968A4005E9E2C /* ValidationSimpleCell.swift in Sources */,
+				7A5F694925EAA324003F7B30 /* GenericPayLoginVC.swift in Sources */,
+				7A4B6CBA25E96A81005E9E2C /* TableCell+delegation.swift in Sources */,
+				7A5F694C25EAA337003F7B30 /* TimPayTextField.swift in Sources */,
 				7A4B6CA425E96805005E9E2C /* SceneDelegate.swift in Sources */,
+				7A72E90825EBB76800489965 /* String+extensions.swift in Sources */,
+				7A5F694625EAA31B003F7B30 /* GenPayCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
