@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,11 +15,10 @@
 		7A4B6CAE25E96807005E9E2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4B6CAC25E96807005E9E2C /* LaunchScreen.storyboard */; };
 		7A4B6CB725E968A4005E9E2C /* ValidationSimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B6CB625E968A4005E9E2C /* ValidationSimpleCell.swift */; };
 		7A4B6CBA25E96A81005E9E2C /* TableCell+delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B6CB925E96A81005E9E2C /* TableCell+delegation.swift */; };
-		7A5F694625EAA31B003F7B30 /* GenPayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F694525EAA31B003F7B30 /* GenPayCell.swift */; };
-		7A5F694925EAA324003F7B30 /* GenericPayLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F694825EAA324003F7B30 /* GenericPayLoginVC.swift */; };
-		7A5F694C25EAA337003F7B30 /* TimPayTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F694B25EAA337003F7B30 /* TimPayTextField.swift */; };
 		7A72E90825EBB76800489965 /* String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72E90725EBB76800489965 /* String+extensions.swift */; };
-		7A72E90D25EBB8C100489965 /* MieiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A72E90C25EBB8C100489965 /* MieiTest.swift */; };
+		7A87399A25F4DE5E003CE8EC /* UserSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A87399925F4DE5E003CE8EC /* UserSettingsManager.swift */; };
+		7AF6A3A625F62C4F000E5896 /* TempPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6A3A525F62C4F000E5896 /* TempPatient.swift */; };
+		E679CEDEF3DB917E0F734A2D /* Pods_validazioneCampi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55801263AA4CA3AEDCC5A7F /* Pods_validazioneCampi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +32,12 @@
 		7A4B6CAF25E96807005E9E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A4B6CB625E968A4005E9E2C /* ValidationSimpleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationSimpleCell.swift; sourceTree = "<group>"; };
 		7A4B6CB925E96A81005E9E2C /* TableCell+delegation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableCell+delegation.swift"; sourceTree = "<group>"; };
-		7A5F694525EAA31B003F7B30 /* GenPayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenPayCell.swift; sourceTree = "<group>"; };
-		7A5F694825EAA324003F7B30 /* GenericPayLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericPayLoginVC.swift; sourceTree = "<group>"; };
-		7A5F694B25EAA337003F7B30 /* TimPayTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimPayTextField.swift; sourceTree = "<group>"; };
 		7A72E90725EBB76800489965 /* String+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extensions.swift"; sourceTree = "<group>"; };
-		7A72E90C25EBB8C100489965 /* MieiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MieiTest.swift; sourceTree = "<group>"; };
+		7A87399925F4DE5E003CE8EC /* UserSettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingsManager.swift; sourceTree = "<group>"; };
+		7AF6A3A525F62C4F000E5896 /* TempPatient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempPatient.swift; sourceTree = "<group>"; };
+		C55801263AA4CA3AEDCC5A7F /* Pods_validazioneCampi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_validazioneCampi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBFDB9F8AA9EC29FC80DD431 /* Pods-validazioneCampi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-validazioneCampi.debug.xcconfig"; path = "Target Support Files/Pods-validazioneCampi/Pods-validazioneCampi.debug.xcconfig"; sourceTree = "<group>"; };
+		CEDC71A130F98033ED07A365 /* Pods-validazioneCampi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-validazioneCampi.release.xcconfig"; path = "Target Support Files/Pods-validazioneCampi/Pods-validazioneCampi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E679CEDEF3DB917E0F734A2D /* Pods_validazioneCampi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +57,8 @@
 			children = (
 				7A4B6CA025E96805005E9E2C /* validazioneCampi */,
 				7A4B6C9F25E96805005E9E2C /* Products */,
+				B03DA340820986566031F7F0 /* Pods */,
+				92D4A0D106A9C5C48E78022F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +75,8 @@
 			children = (
 				7A4B6CA125E96805005E9E2C /* AppDelegate.swift */,
 				7A4B6CA325E96805005E9E2C /* SceneDelegate.swift */,
-				7A5F695125EAA418003F7B30 /* originals */,
-				7A4B6CBC25E96B2E005E9E2C /* Coinvolti */,
+				7A4B6CBC25E96B2E005E9E2C /* Helper */,
+				7AF2C9D625F40D9500F76214 /* UI */,
 				7A4B6CA725E96805005E9E2C /* Main.storyboard */,
 				7A4B6CAA25E96807005E9E2C /* Assets.xcassets */,
 				7A4B6CAC25E96807005E9E2C /* LaunchScreen.storyboard */,
@@ -82,26 +85,41 @@
 			path = validazioneCampi;
 			sourceTree = "<group>";
 		};
-		7A4B6CBC25E96B2E005E9E2C /* Coinvolti */ = {
+		7A4B6CBC25E96B2E005E9E2C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7A87399925F4DE5E003CE8EC /* UserSettingsManager.swift */,
+				7A4B6CB925E96A81005E9E2C /* TableCell+delegation.swift */,
+				7A72E90725EBB76800489965 /* String+extensions.swift */,
+				7AF6A3A525F62C4F000E5896 /* TempPatient.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		7AF2C9D625F40D9500F76214 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				7A4B6CA525E96805005E9E2C /* ViewController.swift */,
 				7A4B6CB625E968A4005E9E2C /* ValidationSimpleCell.swift */,
-				7A4B6CB925E96A81005E9E2C /* TableCell+delegation.swift */,
-				7A72E90725EBB76800489965 /* String+extensions.swift */,
-				7A72E90C25EBB8C100489965 /* MieiTest.swift */,
 			);
-			path = Coinvolti;
+			path = UI;
 			sourceTree = "<group>";
 		};
-		7A5F695125EAA418003F7B30 /* originals */ = {
+		92D4A0D106A9C5C48E78022F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7A5F694525EAA31B003F7B30 /* GenPayCell.swift */,
-				7A5F694825EAA324003F7B30 /* GenericPayLoginVC.swift */,
-				7A5F694B25EAA337003F7B30 /* TimPayTextField.swift */,
+				C55801263AA4CA3AEDCC5A7F /* Pods_validazioneCampi.framework */,
 			);
-			path = originals;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B03DA340820986566031F7F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBFDB9F8AA9EC29FC80DD431 /* Pods-validazioneCampi.debug.xcconfig */,
+				CEDC71A130F98033ED07A365 /* Pods-validazioneCampi.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A4B6CB225E96807005E9E2C /* Build configuration list for PBXNativeTarget "validazioneCampi" */;
 			buildPhases = (
+				CA9C0E6C533B165BA6C954C9 /* [CP] Check Pods Manifest.lock */,
 				7A4B6C9A25E96805005E9E2C /* Sources */,
 				7A4B6C9B25E96805005E9E2C /* Frameworks */,
 				7A4B6C9C25E96805005E9E2C /* Resources */,
+				031CCA8C2DBC925551DFC4DD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,21 +189,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		031CCA8C2DBC925551DFC4DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-validazioneCampi/Pods-validazioneCampi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-validazioneCampi/Pods-validazioneCampi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-validazioneCampi/Pods-validazioneCampi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA9C0E6C533B165BA6C954C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-validazioneCampi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7A4B6C9A25E96805005E9E2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A72E90D25EBB8C100489965 /* MieiTest.swift in Sources */,
 				7A4B6CA625E96805005E9E2C /* ViewController.swift in Sources */,
 				7A4B6CA225E96805005E9E2C /* AppDelegate.swift in Sources */,
+				7A87399A25F4DE5E003CE8EC /* UserSettingsManager.swift in Sources */,
 				7A4B6CB725E968A4005E9E2C /* ValidationSimpleCell.swift in Sources */,
-				7A5F694925EAA324003F7B30 /* GenericPayLoginVC.swift in Sources */,
 				7A4B6CBA25E96A81005E9E2C /* TableCell+delegation.swift in Sources */,
-				7A5F694C25EAA337003F7B30 /* TimPayTextField.swift in Sources */,
 				7A4B6CA425E96805005E9E2C /* SceneDelegate.swift in Sources */,
 				7A72E90825EBB76800489965 /* String+extensions.swift in Sources */,
-				7A5F694625EAA31B003F7B30 /* GenPayCell.swift in Sources */,
+				7AF6A3A625F62C4F000E5896 /* TempPatient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +387,7 @@
 		};
 		7A4B6CB325E96807005E9E2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBFDB9F8AA9EC29FC80DD431 /* Pods-validazioneCampi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -346,6 +407,7 @@
 		};
 		7A4B6CB425E96807005E9E2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEDC71A130F98033ED07A365 /* Pods-validazioneCampi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

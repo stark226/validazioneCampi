@@ -32,7 +32,7 @@ extension String {
     ///controlla che sia SOLO numeri
     func isNumber() -> Bool {
         let numberCharacters = NSCharacterSet.decimalDigits.inverted
-        return !self.isEmpty && self.rangeOfCharacter(from: numberCharacters) == nil
+        return self.rangeOfCharacter(from: numberCharacters) == nil
     }
     
 
